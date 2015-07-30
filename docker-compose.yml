@@ -3,7 +3,7 @@ sugarcrm:
   ports:
     - "2080:80"
   links:
-    - "db"
+    - "db:database"
   environment:
     DB_TYPE: mysql
     DB_MANAGER: MysqlManager

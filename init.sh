@@ -3,7 +3,7 @@
 set -e
 
 if [ -z "$DB_HOST_NAME"]; then
-	export DB_HOST_NAME=$DB_PORT_3306_TCP_ADDR
+	export DB_HOST_NAME=database
 fi
 
 if [ -z "$DB_TCP_PORT"]; then
