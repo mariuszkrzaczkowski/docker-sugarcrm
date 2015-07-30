@@ -16,3 +16,9 @@ If you already have MySQL installed or want to use a platform service line Amazo
 1. Install [Docker](http://docs.docker.com/installation/)
 2. Run `docker run --name some-sugarcrm -e DB_HOST_NAME=yourhostname -e DATABASE_NAME=yourdatabasename -e DB_USER_NAME=yourusername -e DB_PASSWORD=yourpassword -e DB_TYPE=mysql -e DB_TCP_PORT=3306 -e DB_MANAGER=MysqlManager -p 2080:80 -d spantree/sugarcrm`
 3. Access `http://{docker_host}:2080` from your web browser to finish setting up SugarCRM.
+
+### Additional Tips
+curl -L https://github.com/docker/compose/releases/download/1.3.3/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+docker-compose ps
+docker-compose up
+docker-compose up --no-recreate
