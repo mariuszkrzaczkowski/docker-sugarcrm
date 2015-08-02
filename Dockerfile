@@ -31,5 +31,8 @@ RUN chmod u+x /usr/local/bin/init.sh
 ADD crons.conf /root/crons.conf
 RUN crontab /root/crons.conf
 
+VOLUME ["/var/www/sugarcrm"]
+VOLUME ["/var/log"]
+
 EXPOSE 80
 ENTRYPOINT ["/usr/local/bin/init.sh"]
