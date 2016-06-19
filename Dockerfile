@@ -1,8 +1,9 @@
 FROM php:5.6-apache
 
 ENV MAJOR_VERSION 6.5
-ENV MINOR_VERSION 22
-ENV SOURCEFORGE_MIRROR http://downloads.sourceforge.net
+ENV MINOR_VERSION 23
+ENV SOURCEFORGE_MIRROR https://downloads.sourceforge.net
+#ENV SOURCEFORGE_MIRROR http://tenet.dl.sourceforge.net
 ENV WWW_FOLDER /var/www/html
 
 RUN apt-get update && apt-get upgrade -y && \
