@@ -3,7 +3,10 @@ sugarcrm:
   ports:
     - "2080:80"
   links:
-    - "db"
+    - "db:database"
+  volumes:
+    - /home/agilesoft/docker/crm/docker-sugarcrm/data/www:/var/www/sugarcrm
+    - /home/agilesoft/docker/crm/docker-sugarcrm/data/log:/var/log
   environment:
     DB_TYPE: mysql
     DB_MANAGER: MysqlManager
