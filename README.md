@@ -1,5 +1,6 @@
 ## Changes from Forked Repository:
 - Update to latest version of SugarCRM Community Edition (6.5.23)
+- Add persistence to SugarCRM image from docker-compose script (courtesy of fork by [@johnosorio](https://github.com/johnosorio/docker-sugarcrm))
 
 ## How to use this image
 
